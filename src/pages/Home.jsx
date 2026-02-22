@@ -121,7 +121,7 @@ const Home = () => {
           Core Expertise
         </h2>
         <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-          {['Python', 'TensorFlow', 'PyTorch', 'Machine Learning', 'Deep Learning', 'NLP'].map((skill, i) => (
+          {['Python', 'TensorFlow', 'PyTorch', 'Machine Learning', 'Deep Learning', 'NLP','Gen Ai','Agentic Ai'].map((skill, i) => (
             <span
               key={skill}
               className={`px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium 

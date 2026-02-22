@@ -17,23 +17,18 @@ const WorkExperience = () => {
 
   const experiences = [
     {
-      title: 'Senior AI Engineer',
-      company: 'TechCorp AI',
-      period: '2022 - Present',
+      title: ' AI Engineer',
+      company: 'YBI',
+      period: '2022 - 2024',
       description: 'Lead the development of LLM-based applications, optimize inference pipelines, and mentor junior engineers. Implemented RAG systems for enterprise clients.',
     },
     {
       title: 'Machine Learning Engineer',
-      company: 'DataWorks',
-      period: '2019 - 2022',
+      company: 'INDRSHIL UNIVERSITY',
+      period: '2022- 2026',
       description: 'Built and deployed computer vision models for autonomous retail checkout systems. Achieved 98% accuracy and reduced latency by 40%.',
     },
-    {
-      title: 'Software Engineer (AI)',
-      company: 'StartupX',
-      period: '2017 - 2019',
-      description: 'Developed recommendation engines and predictive analytics tools for e-commerce. Worked with cross-functional teams to integrate ML models into production.',
-    },
+    
   ];
 
   return (

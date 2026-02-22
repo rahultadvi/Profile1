@@ -47,7 +47,7 @@ const About = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 overflow-hidden relative">
+    <div className="max-w-6xl mx-auto px-4 py-12 overflow-hidden relative bg-gradient-to-b from-gray-50 to-white">
       {/* Decorative background elements */}
       <div className="absolute top-20 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10" />
       <div className="absolute bottom-20 right-0 w-80 h-80 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10" />
@@ -103,33 +103,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Experience Timeline – scroll‑triggered */}
-      <div ref={experienceRef} className="mb-16">
-        <h2 className={`text-3xl font-bold text-gray-800 mb-8 text-center transition-all duration-700 ${
-          experienceInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          Experience
-        </h2>
-        <div className="space-y-8">
-          {experiences.map((job, index) => (
-            <div
-              key={index}
-              className={`bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 
-                         ${experienceInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              style={{ transitionDelay: experienceInView ? `${300 + index * 150}ms` : '0ms' }}
-            >
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {job.title}
-                </h3>
-                <span className="text-blue-600 font-medium">{job.period}</span>
-              </div>
-              <p className="text-gray-600 text-lg mb-2">{job.company}</p>
-              <p className="text-gray-700">{job.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 };

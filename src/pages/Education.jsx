@@ -64,15 +64,15 @@ const Education = () => {
   // Education data
   const education = [
     {
-      degree: 'M.S. in Artificial Intelligence',
-      institution: 'Stanford University',
-      year: '2017 - 2019',
+      degree: 'B.tech. in Artificial Intelligence',
+      institution: 'Indrshil University',
+      year: '2022 - 2026',
       description: 'Specialized in deep learning and reinforcement learning. Thesis on multi-modal learning.',
     },
     {
-      degree: 'B.E. in Computer Engineering',
-      institution: 'University of California, Berkeley',
-      year: '2013 - 2017',
+      degree: 'B.tech. in Computer Engineering',
+      institution: 'Indrshil University',
+      year: '2022 - 2026',
       description: 'Minor in Mathematics. Focus on algorithms, data structures, and machine learning foundations.',
     },
   ];
